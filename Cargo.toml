@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "facebook-graph-api",
+    "facebook-graph-api-explorer-kit",
+    "facebook-graph-api-node",
+]
