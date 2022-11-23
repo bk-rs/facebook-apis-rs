@@ -226,6 +226,9 @@ mod tests {
             Err(err) => panic!("{}", err),
         }
 
+        /*
+        When https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token={short-lived-access-token}
+        */
         let content = include_str!(
             "../tests/response_body_json_files/err__access_token_session_key_x_is_malformed.json"
         );
