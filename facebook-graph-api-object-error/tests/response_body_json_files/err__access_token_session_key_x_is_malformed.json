@@ -1,0 +1,8 @@
+{
+    "error": {
+        "message": "Error validating access token: Session key 18.0,AZ58equE9k6d9-N6cS4.3600.1664010000-17841450601070166 is malformed because of invalid user id.",
+        "type": "OAuthException",
+        "code": 190,
+        "fbtrace_id": "AruZbVMp2q088kHToAL8n65"
+    }
+}

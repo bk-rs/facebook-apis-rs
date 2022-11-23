@@ -1,0 +1,8 @@
+{
+    "error": {
+        "message": "Error validating access token: Session has expired on Thursday, 06-Oct-22 00:00:00 PDT. The current time is Tuesday, 22-Nov-22 19:54:40 PST.",
+        "type": "OAuthException",
+        "code": 190,
+        "fbtrace_id": "AOl1gSqZRMyPzEMw9OJXzYh"
+    }
+}
