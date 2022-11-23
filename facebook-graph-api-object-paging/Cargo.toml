@@ -13,3 +13,7 @@ categories = []
 readme = "README.md"
 
 [dependencies]
+serde = { version = "1", default-features = false, features = ["std", "derive"] }
+
+[dev-dependencies]
+serde_json = { version = "1" }
