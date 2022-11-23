@@ -1,13 +1,13 @@
 [package]
-name = "facebook-graph-api"
+name = "facebook-graph-api-object-error"
 version = "0.0.0"
 authors = ["vkill <vkill.net@gmail.com>"]
 edition = "2021"
-description = "Facebook - Graph API"
+description = "Facebook - Graph API Object Error"
 license = "Apache-2.0 OR MIT"
 repository = "https://github.com/bk-rs/facebook-apis-rs"
 homepage = "https://github.com/bk-rs/facebook-apis-rs"
-documentation = "https://docs.rs/facebook-graph-api"
+documentation = "https://docs.rs/facebook-graph-api-object-error"
 keywords = []
 categories = []
 readme = "README.md"
