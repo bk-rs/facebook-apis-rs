@@ -68,6 +68,12 @@ impl Error {
 }
 
 impl Error {
+    pub fn is_error_validating_access_token(&self) -> bool {
+        self.message
+            .to_lowercase()
+            .contains("error validating access token")
+    }
+
     pub fn is_access_token_session_has_been_invalidated(&self) -> bool {
         self.message
             .to_lowercase()
@@ -114,6 +120,28 @@ pub enum KnownErrorCase {
     AccessTokenExpiredOrRevokedOrInvalid,
     PermissionNotGrantedOrRemoved,
     RetryLater,
+}
+
+impl KnownErrorCase {
+    pub fn is_api_too_many_calls(&self) -> bool {
+        matches!(self, Self::ApiTooManyCalls)
+    }
+
+    pub fn is_api_user_too_many_calls(&self) -> bool {
+        matches!(self, Self::ApiUserTooManyCalls)
+    }
+
+    pub fn is_access_token_expired_or_revoked_or_invalid(&self) -> bool {
+        matches!(self, Self::AccessTokenExpiredOrRevokedOrInvalid)
+    }
+
+    pub fn is_permission_not_granted_or_removed(&self) -> bool {
+        matches!(self, Self::PermissionNotGrantedOrRemoved)
+    }
+
+    pub fn is_retry_later(&self) -> bool {
+        matches!(self, Self::RetryLater)
+    }
 }
 
 impl core::fmt::Display for KnownErrorCase {
@@ -187,6 +215,7 @@ mod tests {
                     err_json.error.to_known_error_case().unwrap(),
                     KnownErrorCase::AccessTokenExpiredOrRevokedOrInvalid
                 ));
+                assert!(err_json.error.is_error_validating_access_token());
                 assert!(err_json
                     .error
                     .is_access_token_session_has_been_invalidated());
@@ -205,6 +234,7 @@ mod tests {
                     err_json.error.to_known_error_case().unwrap(),
                     KnownErrorCase::AccessTokenExpiredOrRevokedOrInvalid
                 ));
+                assert!(err_json.error.is_error_validating_access_token());
                 assert!(err_json.error.is_access_token_session_has_expired());
             }
             Err(err) => panic!("{}", err),
@@ -221,6 +251,7 @@ mod tests {
                     err_json.error.to_known_error_case().unwrap(),
                     KnownErrorCase::AccessTokenExpiredOrRevokedOrInvalid
                 ));
+                assert!(err_json.error.is_error_validating_access_token());
                 assert!(err_json.error.is_access_token_session_key_is_malformed());
             }
             Err(err) => panic!("{}", err),
@@ -239,6 +270,7 @@ mod tests {
                     err_json.error.to_known_error_case().unwrap(),
                     KnownErrorCase::AccessTokenExpiredOrRevokedOrInvalid
                 ));
+                assert!(err_json.error.is_error_validating_access_token());
                 assert!(err_json.error.is_access_token_session_key_is_malformed());
             }
             Err(err) => panic!("{}", err),
@@ -254,6 +286,7 @@ mod tests {
                     err_json.error.to_known_error_case().unwrap(),
                     KnownErrorCase::AccessTokenExpiredOrRevokedOrInvalid
                 ));
+                assert!(!err_json.error.is_error_validating_access_token());
             }
             Err(err) => panic!("{}", err),
         }
