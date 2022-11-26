@@ -13,3 +13,13 @@ categories = []
 readme = "README.md"
 
 [dependencies]
+facebook-graph-api-object-error = { version = "0.1", path = "../facebook-graph-api-object-error" }
+facebook-graph-api-object-paging = { version = "0.1", path = "../facebook-graph-api-object-paging" }
+
+http-api-client-endpoint = { version = "0.2" }
+
+serde = { version = "1", default-features = false, features = ["std", "derive"] }
+serde-aux = { version = "4", default-features = false }
+url = { version = "2", default-features = false, features = ["serde"] }
+serde_json = { version = "1", default-features = false, features = ["std"] }
+chrono = { version = "0.4", default-features = false, features = ["serde"] }

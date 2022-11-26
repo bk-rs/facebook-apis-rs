@@ -1,0 +1,123 @@
+{
+    "data": [
+        {
+            "id": "106487912721749",
+            "name": "Chengdu, Sichuan",
+            "location": {
+                "city": "Chengdu",
+                "country": "China",
+                "latitude": 30.6667,
+                "longitude": 104.067
+            },
+            "link": "https:\/\/www.facebook.com\/106487912721749",
+            "is_unclaimed": true,
+            "verification_status": "not_verified"
+        },
+        {
+            "id": "1694762700735855",
+            "name": "Chengdu Plus",
+            "location": {
+                "city": "Chengdu",
+                "country": "China",
+                "latitude": 30.6667,
+                "longitude": 104.067
+            },
+            "link": "https:\/\/www.facebook.com\/1694762700735855",
+            "is_unclaimed": false,
+            "verification_status": "not_verified"
+        },
+        {
+            "id": "106385865367008",
+            "name": "Chengdu Plus Espa\u00f1ol",
+            "link": "https:\/\/www.facebook.com\/106385865367008",
+            "is_unclaimed": false,
+            "verification_status": "not_verified"
+        },
+        {
+            "id": "1627995340833942",
+            "name": "Go Chengdu",
+            "location": {
+                "city": "Chengdu",
+                "country": "China",
+                "latitude": 24.527134822598,
+                "longitude": 101.953125,
+                "street": "\u9526\u6c5f\u533a\u4e09\u8272\u8def38\u53f7",
+                "zip": "610000"
+            },
+            "link": "https:\/\/www.facebook.com\/1627995340833942",
+            "is_unclaimed": false,
+            "verification_status": "not_verified"
+        },
+        {
+            "id": "106747932037101",
+            "name": "Chengdu Lingluo-Tech Co., Ltd.",
+            "link": "https:\/\/www.facebook.com\/106747932037101",
+            "is_unclaimed": false,
+            "verification_status": "not_verified"
+        },
+        {
+            "id": "330819794408679",
+            "name": "Chengdu Kelier Electronic Co., Ltd",
+            "location": {
+                "city": "Chengdu",
+                "country": "China"
+            },
+            "link": "https:\/\/www.facebook.com\/330819794408679",
+            "is_unclaimed": false,
+            "verification_status": "not_verified"
+        },
+        {
+            "id": "1953045664971803",
+            "name": "Royal Thai Consulate-General in Chengdu \u0e2a\u0e16\u0e32\u0e19\u0e01\u0e07\u0e2a\u0e38\u0e25\u0e43\u0e2b\u0e0d\u0e48 \u0e13 \u0e19\u0e04\u0e23\u0e40\u0e09\u0e34\u0e07\u0e15\u0e39",
+            "location": {
+                "city": "Chengdu",
+                "country": "China",
+                "latitude": 30.618095523078,
+                "longitude": 104.06618968753,
+                "street": "12F, Building C, Fund International Plaza, No.6, Hangkong Road,",
+                "zip": "610041"
+            },
+            "link": "https:\/\/www.facebook.com\/1953045664971803",
+            "is_unclaimed": false,
+            "verification_status": "blue_verified"
+        },
+        {
+            "id": "104488971683935",
+            "name": "Pakistan Consulate General Chengdu",
+            "link": "https:\/\/www.facebook.com\/104488971683935",
+            "is_unclaimed": false,
+            "verification_status": "blue_verified"
+        },
+        {
+            "id": "2142419205975578",
+            "name": "Chengdu 2021 FISU World University Games",
+            "link": "https:\/\/www.facebook.com\/2142419205975578",
+            "is_unclaimed": false,
+            "verification_status": "not_verified"
+        },
+        {
+            "id": "2126399854255313",
+            "name": "\u6210\u90fdChengdu",
+            "location": {
+                "city": "Singapore",
+                "country": "Singapore",
+                "latitude": 1.2817517097533,
+                "longitude": 103.84763174952,
+                "state": "Singapore",
+                "street": "96 Amoy Street",
+                "zip": "069916"
+            },
+            "link": "https:\/\/www.facebook.com\/2126399854255313",
+            "is_unclaimed": false,
+            "verification_status": "not_verified"
+        }
+    ],
+    "paging": {
+        "cursors": {
+            "before": "QWJvclRqTExVbHRDOXNNMUJiZA1A0NTNLNHh6dGk1c0ZA2MTdkWVJsWjlGMkpBallEQmZADLWs4MFlHWnBIalJKSE5OXzZAIQ1dZAd21ScGlRVTVHWE4xUDBoSWdMZAGRxX2VhUlpyZAmlKNHpLUWpuYUVOY1BIUVNEb1U2X2ZAhbUFxZAFdPajRvbUJlVi1lRjB0aHJCdzZAhd3pLQTNudzFubEUtNy1idG9iWEtsMTMzcDlRLVFrb3d0SXFGTHZA1Mm9PR05BSExFSGFJTGtKQ09hVXdNcFhqS0JlVVRtb1dkZA0dvT01LRXVmS1ZA4OUg5YmdjUFFzMDEzYTNBd2NSZAkg0OHZAGRlNVRHdOZATlyZAkNFeVRjdUZAYazkwTnloTmZACMk5kWUhTb0RFM3Q2S1c5V0lRNFdNTDdCRGhkVGo0QjY2a3B5VUVlMGFPa3NRdkFOcERKa0xsNlgtVk12TW94QllrRnpHOG1FdTUxNHk5dDdOX0IxcV90WnNoM2ZAoRkV4Q3paNjl2dE1KS3lwakc3SUZA6YVQ5TnRKbldnQTdhOUZAxUklLOVgtS0J3QTFkd29IcHFVbFMxLVJ2aDluUm44VXF0M1JwWnN4bGl5RThWYnhsZADJTZAVpXT0xyd1dMbG81VXdjR3J5MEo1c195TUVMTnlHMlJ0NUhhSk9feF9LR3kxV1RPam5KYk93d3V1eWRtckdOMmVYb3k1anhFLV9XU2Q0NUUzamZACZA3ZAVZAEtjc1JzeEMxQ2x2dG9WTmJtU0o3Mlc1NG9UcGZAtZA2Vubi1kZA3IyUUV1SU9vcm5ZAR1V4dFd2LUNiSXNoSjBnQ3pHRHRsMzFuMXd1MWpPX2tQdHFqVHF0T0p5V0lLNG9maGdDYTRmNlhVZAGNMUmR6ZAk84VEdfbEFWWVE5QkxwaUwxd2dWLXdERV9TNGVMVDItYUp4a012eTd4bHRwYlVtQWZAWOXd1bTQtV1Q4Ymt4TkQ0cW8ZD",
+            "after": "QWJycTNiQkY0RW1SRGx4ZAlFXVHc2ODNFZATFBcUhYay1fanZAvVGtISUpsZAG5mak9HTUo4WHkzMHB0QnpEaWZAtYzl3cGNIcUFEalZAxeVVEcDdOdzZAzUGNBWmlYNFN4SHQ0VmYtMHBUdnpQT1lmWlBfTzdVRHFMUHkyd1BOTlg1UEN4UTBNMkpsNXdhU210a1lmc084ak9qdGEtTkRpaGQyckxWTUJTTlVkOHJoZA0xKVV9scDNscnhTelY2azdSVk1aZAkVVakhmVkhaRkd5US1ySHcwOGtxNENPUE1PM1VLd3ZAsOUxNOXFqSEpqTENKdnZAkSUx5aTdWcFNoVS1IVVJVRzdIdzJuNHpUb1piOTgwVjJRY2pQc19tNHJmSzZAqdTBDVXFOVUJFMFpZAYzdtVTR6X2NEdkxNQ1VkZAzROOWU0LUh2U0N3S1RZAOThEa0lHWWRmeWhIY0luN1RYRjNPY3drZAEJoVzlmZA0VkWkttSjQtYTdWTUF1YzgySTZATczhoLXlBcDlKbk1Dd01rNVhJcDVOZAG5zQVlLU0hDRm5ubG01Y2U5TmM3SHVRVUtnQ2xVd3hDUVc3ZAU16S0ZAKckxkLUROV3hnTkE4TWgwRlRZAWTRPUmRDQXBRSW0wUFd2VFlhT0dnaHBaZAVdvU0JGUktnajNpR0tYVktlN0NrSGtRUzFiaEdNbjRHNWwzNDVoV29PamRBT1pEc3ZAoNDV6a21WU2FQcThYV0N6bHp3azNsc1ZATd2pvbVZAhNXFJMENUSjYyZAkcwdXRiX2c4WFRRM2dzTGptOXpkei1EVzhX"
+        },
+        "next": "https:\/\/graph.facebook.com\/v14.0\/pages\/search?access_token=EAAC4KqMZAAtEBAN4Q3OUCn7yCKs0w3ybbwHosDkteivHUietICw2sEDD1UZA3n2EZAOU4KkNvwKlCdZAry6f2XI7ZAcceM0ZAlueRbL1JIvJiqumfAhSUQFT9V6U3V4qlDUR9ZClZALCsWlEUNqZCp7PElh2OrK6b2kmg198jAFbbUOwetnaZCjQWpVIJ9Q0Vafpk7Xfv7SOid9QZDZD&fields=id\u00252Cname\u00252Clocation\u00257Bcity\u00252Ccountry\u00252Clatitude\u00252Clongitude\u00252Cstate\u00252Cstreet\u00252Czip\u00257D\u00252Clink\u00252Cis_eligible_for_branded_content\u00252Cis_unclaimed\u00252Cverification_status&q=Chengdu&limit=10&after=QWJycTNiQkY0RW1SRGx4ZAlFXVHc2ODNFZATFBcUhYay1fanZAvVGtISUpsZAG5mak9HTUo4WHkzMHB0QnpEaWZAtYzl3cGNIcUFEalZAxeVVEcDdOdzZAzUGNBWmlYNFN4SHQ0VmYtMHBUdnpQT1lmWlBfTzdVRHFMUHkyd1BOTlg1UEN4UTBNMkpsNXdhU210a1lmc084ak9qdGEtTkRpaGQyckxWTUJTTlVkOHJoZA0xKVV9scDNscnhTelY2azdSVk1aZAkVVakhmVkhaRkd5US1ySHcwOGtxNENPUE1PM1VLd3ZAsOUxNOXFqSEpqTENKdnZAkSUx5aTdWcFNoVS1IVVJVRzdIdzJuNHpUb1piOTgwVjJRY2pQc19tNHJmSzZAqdTBDVXFOVUJFMFpZAYzdtVTR6X2NEdkxNQ1VkZAzROOWU0LUh2U0N3S1RZAOThEa0lHWWRmeWhIY0luN1RYRjNPY3drZAEJoVzlmZA0VkWkttSjQtYTdWTUF1YzgySTZATczhoLXlBcDlKbk1Dd01rNVhJcDVOZAG5zQVlLU0hDRm5ubG01Y2U5TmM3SHVRVUtnQ2xVd3hDUVc3ZAU16S0ZAKckxkLUROV3hnTkE4TWgwRlRZAWTRPUmRDQXBRSW0wUFd2VFlhT0dnaHBaZAVdvU0JGUktnajNpR0tYVktlN0NrSGtRUzFiaEdNbjRHNWwzNDVoV29PamRBT1pEc3ZAoNDV6a21WU2FQcThYV0N6bHp3azNsc1ZATd2pvbVZAhNXFJMENUSjYyZAkcwdXRiX2c4WFRRM2dzTGptOXpkei1EVzhX",
+        "previous": "https:\/\/graph.facebook.com\/v14.0\/pages\/search?access_token=EAAC4KqMZAAtEBAN4Q3OUCn7yCKs0w3ybbwHosDkteivHUietICw2sEDD1UZA3n2EZAOU4KkNvwKlCdZAry6f2XI7ZAcceM0ZAlueRbL1JIvJiqumfAhSUQFT9V6U3V4qlDUR9ZClZALCsWlEUNqZCp7PElh2OrK6b2kmg198jAFbbUOwetnaZCjQWpVIJ9Q0Vafpk7Xfv7SOid9QZDZD&fields=id\u00252Cname\u00252Clocation\u00257Bcity\u00252Ccountry\u00252Clatitude\u00252Clongitude\u00252Cstate\u00252Cstreet\u00252Czip\u00257D\u00252Clink\u00252Cis_eligible_for_branded_content\u00252Cis_unclaimed\u00252Cverification_status&q=Chengdu&limit=10&before=QWJvclRqTExVbHRDOXNNMUJiZA1A0NTNLNHh6dGk1c0ZA2MTdkWVJsWjlGMkpBallEQmZADLWs4MFlHWnBIalJKSE5OXzZAIQ1dZAd21ScGlRVTVHWE4xUDBoSWdMZAGRxX2VhUlpyZAmlKNHpLUWpuYUVOY1BIUVNEb1U2X2ZAhbUFxZAFdPajRvbUJlVi1lRjB0aHJCdzZAhd3pLQTNudzFubEUtNy1idG9iWEtsMTMzcDlRLVFrb3d0SXFGTHZA1Mm9PR05BSExFSGFJTGtKQ09hVXdNcFhqS0JlVVRtb1dkZA0dvT01LRXVmS1ZA4OUg5YmdjUFFzMDEzYTNBd2NSZAkg0OHZAGRlNVRHdOZATlyZAkNFeVRjdUZAYazkwTnloTmZACMk5kWUhTb0RFM3Q2S1c5V0lRNFdNTDdCRGhkVGo0QjY2a3B5VUVlMGFPa3NRdkFOcERKa0xsNlgtVk12TW94QllrRnpHOG1FdTUxNHk5dDdOX0IxcV90WnNoM2ZAoRkV4Q3paNjl2dE1KS3lwakc3SUZA6YVQ5TnRKbldnQTdhOUZAxUklLOVgtS0J3QTFkd29IcHFVbFMxLVJ2aDluUm44VXF0M1JwWnN4bGl5RThWYnhsZADJTZAVpXT0xyd1dMbG81VXdjR3J5MEo1c195TUVMTnlHMlJ0NUhhSk9feF9LR3kxV1RPam5KYk93d3V1eWRtckdOMmVYb3k1anhFLV9XU2Q0NUUzamZACZA3ZAVZAEtjc1JzeEMxQ2x2dG9WTmJtU0o3Mlc1NG9UcGZAtZA2Vubi1kZA3IyUUV1SU9vcm5ZAR1V4dFd2LUNiSXNoSjBnQ3pHRHRsMzFuMXd1MWpPX2tQdHFqVHF0T0p5V0lLNG9maGdDYTRmNlhVZAGNMUmR6ZAk84VEdfbEFWWVE5QkxwaUwxd2dWLXdERV9TNGVMVDItYUp4a012eTd4bHRwYlVtQWZAWOXd1bTQtV1Q4Ymt4TkQ0cW8ZD"
+    }
+}
