@@ -1,7 +1,16 @@
 [package]
 name = "facebook-access-token"
 version = "0.0.0"
+authors = ["vkill <vkill.net@gmail.com>"]
 edition = "2021"
+description = "Facebook - Access Token"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/bk-rs/facebook-apis-rs"
+homepage = "https://github.com/bk-rs/facebook-apis-rs"
+documentation = "https://docs.rs/facebook-access-token"
+keywords = []
+categories = []
+readme = "README.md"
 
 [dependencies]
 wrapping-macro = { version = "0.1" }

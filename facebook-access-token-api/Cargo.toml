@@ -1,7 +1,16 @@
 [package]
 name = "facebook-access-token-api"
 version = "0.0.0"
+authors = ["vkill <vkill.net@gmail.com>"]
 edition = "2021"
+description = "Facebook - Access Token API"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/bk-rs/facebook-apis-rs"
+homepage = "https://github.com/bk-rs/facebook-apis-rs"
+documentation = "https://docs.rs/facebook-access-token-api"
+keywords = []
+categories = []
+readme = "README.md"
 
 [dependencies]
 facebook-access-token = { version = "0.0", path = "../facebook-access-token" }
