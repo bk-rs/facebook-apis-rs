@@ -1,0 +1,8 @@
+{
+    "error": {
+        "message": "Invalid OAuth access token - Debug only access token",
+        "type": "OAuthException",
+        "code": 190,
+        "fbtrace_id": "AUfDHCHqpctBdmnqRGLPQbQ"
+    }
+}

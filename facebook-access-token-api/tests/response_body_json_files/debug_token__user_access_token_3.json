@@ -1,0 +1,21 @@
+{
+    "data": {
+        "app_id": "257422819769992",
+        "type": "USER",
+        "application": "oauth2-rs-f-b-web-app-demo",
+        "data_access_expires_at": 1671205551,
+        "error": {
+            "code": 190,
+            "message": "Error validating access token: Session has expired on Wednesday, 16-Nov-22 07:45:51 PST. The current time is Thursday, 17-Nov-22 21:30:03 PST.",
+            "subcode": 463
+        },
+        "expires_at": 1668613551,
+        "is_valid": false,
+        "issued_at": 1663429551,
+        "scopes": [
+            "email",
+            "public_profile"
+        ],
+        "user_id": "123"
+    }
+}

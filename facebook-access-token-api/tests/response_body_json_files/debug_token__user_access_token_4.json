@@ -1,0 +1,38 @@
+{
+    "data": {
+        "app_id": "257422819769992",
+        "type": "USER",
+        "application": "oauth2-rs-f-b-web-app-demo",
+        "data_access_expires_at": 1671412462,
+        "error": {
+            "code": 190,
+            "message": "Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.",
+            "subcode": 460
+        },
+        "expires_at": 0,
+        "is_valid": false,
+        "scopes": [
+            "email",
+            "instagram_basic",
+            "instagram_manage_comments",
+            "instagram_manage_insights",
+            "instagram_content_publish",
+            "public_profile"
+        ],
+        "granular_scopes": [
+            {
+                "scope": "instagram_basic"
+            },
+            {
+                "scope": "instagram_manage_comments"
+            },
+            {
+                "scope": "instagram_manage_insights"
+            },
+            {
+                "scope": "instagram_content_publish"
+            }
+        ],
+        "user_id": "123"
+    }
+}

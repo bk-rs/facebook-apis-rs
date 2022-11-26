@@ -1,0 +1,54 @@
+{
+    "data": {
+        "app_id": "202493264460000",
+        "type": "USER",
+        "application": "xxxx",
+        "data_access_expires_at": 1635913358,
+        "expires_at": 0,
+        "is_valid": true,
+        "issued_at": 1622448563,
+        "scopes": [
+            "pages_show_list",
+            "instagram_basic",
+            "instagram_manage_comments",
+            "instagram_manage_insights",
+            "instagram_content_publish",
+            "pages_read_engagement",
+            "pages_manage_metadata",
+            "public_profile"
+        ],
+        "granular_scopes": [
+            {
+                "scope": "pages_show_list",
+                "target_ids": [
+                    "104518538110000"
+                ]
+            },
+            {
+                "scope": "instagram_basic",
+                "target_ids": [
+                    "17841400478070000"
+                ]
+            },
+            {
+                "scope": "instagram_manage_comments"
+            },
+            {
+                "scope": "instagram_manage_insights",
+                "target_ids": [
+                    "17841400478070000"
+                ]
+            },
+            {
+                "scope": "instagram_content_publish"
+            },
+            {
+                "scope": "pages_read_engagement"
+            },
+            {
+                "scope": "pages_manage_metadata"
+            }
+        ],
+        "user_id": "780170842500000"
+    }
+}

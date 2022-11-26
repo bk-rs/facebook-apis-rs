@@ -1,0 +1,17 @@
+{
+    "data": {
+        "app_id": "202493264460000",
+        "type": "USER",
+        "application": "xxxx",
+        "data_access_expires_at": 1630564369,
+        "error": {
+            "code": 190,
+            "message": "Error validating access token: The session was invalidated explicitly using an API call.",
+            "subcode": 466
+        },
+        "expires_at": 1622793600,
+        "is_valid": false,
+        "scopes": [],
+        "user_id": "1882252945270000"
+    }
+}

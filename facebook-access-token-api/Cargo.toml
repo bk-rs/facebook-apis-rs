@@ -1,0 +1,18 @@
+[package]
+name = "facebook-access-token-api"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+facebook-access-token = { version = "0.0", path = "../facebook-access-token" }
+facebook-graph-api-object-error = { version = "0.1", path = "../facebook-graph-api-object-error" }
+
+http-api-client-endpoint = { version = "0.2" }
+http-api-client = { version = "0.2" }
+
+serde = { version = "1", default-features = false, features = ["std", "derive"] }
+url = { version = "2", default-features = false, features = ["serde"] }
+serde_json = { version = "1", default-features = false, features = ["std"] }
+serde-aux = { version = "4", default-features = false }
+facebook-permission = { version = "0.1.5" }
+chrono = { version = "0.4", features = ["serde"] }

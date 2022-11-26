@@ -1,0 +1,17 @@
+{
+    "data": {
+        "app_id": "257422819769992",
+        "type": "USER",
+        "application": "oauth2-rs-f-b-web-app-demo",
+        "data_access_expires_at": 1676526788,
+        "expires_at": 1668754800,
+        "is_valid": true,
+        "metadata": {
+            "auth_type": "rerequest"
+        },
+        "scopes": [
+            "public_profile"
+        ],
+        "user_id": "123"
+    }
+}

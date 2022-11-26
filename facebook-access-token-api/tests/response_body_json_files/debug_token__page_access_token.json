@@ -1,0 +1,24 @@
+{
+    "data": {
+        "app_id": "257422819769992",
+        "type": "PAGE",
+        "application": "oauth2-rs-f-b-web-app-demo",
+        "data_access_expires_at": 1676858291,
+        "expires_at": 1669086000,
+        "is_valid": true,
+        "profile_id": "103455271248220",
+        "scopes": [
+            "pages_show_list",
+            "public_profile"
+        ],
+        "granular_scopes": [
+            {
+                "scope": "pages_show_list",
+                "target_ids": [
+                    "103455271248220"
+                ]
+            }
+        ],
+        "user_id": "123"
+    }
+}

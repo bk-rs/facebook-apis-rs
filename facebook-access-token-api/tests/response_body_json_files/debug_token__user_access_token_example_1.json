@@ -1,0 +1,32 @@
+{
+    "data": {
+        "app_id": "202493264460000",
+        "type": "USER",
+        "application": "xxxx",
+        "data_access_expires_at": 1633717120,
+        "expires_at": 0,
+        "is_valid": true,
+        "issued_at": 1625941044,
+        "scopes": [
+            "pages_show_list",
+            "instagram_basic",
+            "instagram_manage_insights",
+            "public_profile"
+        ],
+        "granular_scopes": [
+            {
+                "scope": "pages_show_list",
+                "target_ids": [
+                    "109004958110000"
+                ]
+            },
+            {
+                "scope": "instagram_basic"
+            },
+            {
+                "scope": "instagram_manage_insights"
+            }
+        ],
+        "user_id": "104211345270000"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "data": {
+        "app_id": "257422819769992",
+        "type": "APP",
+        "application": "oauth2-rs-f-b-web-app-demo",
+        "is_valid": true,
+        "scopes": []
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "data": {
+        "error": {
+            "code": 190,
+            "message": "Error validating application. Cannot get application info due to a system error."
+        },
+        "is_valid": false,
+        "scopes": []
+    }
+}

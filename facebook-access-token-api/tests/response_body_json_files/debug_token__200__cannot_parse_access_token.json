@@ -1,0 +1,10 @@
+{
+    "data": {
+        "error": {
+            "code": 190,
+            "message": "Invalid OAuth access token - Cannot parse access token"
+        },
+        "is_valid": false,
+        "scopes": []
+    }
+}

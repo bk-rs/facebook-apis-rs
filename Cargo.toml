@@ -1,6 +1,10 @@
 [workspace]
 members = [
     # 
+    "facebook-access-token",
+    "facebook-access-token-api",
+    "facebook-access-token-api/demo",
+    # 
     "facebook-graph-api",
     # 
     "facebook-graph-api-explorer-kit",
