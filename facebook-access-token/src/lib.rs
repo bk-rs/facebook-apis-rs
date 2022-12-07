@@ -128,14 +128,9 @@ wrapping_macro::wrapping_string! {
 //
 //
 //
-wrapping_macro::wrapping! {
+wrapping_macro::wrapping_int! {
     #[derive(Debug, Clone, PartialEq, Eq)]
     pub struct AccessTokenExpiresIn(usize);
-}
-impl core::fmt::Display for AccessTokenExpiresIn {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{}", self.0)
-    }
 }
 
 #[cfg(test)]
