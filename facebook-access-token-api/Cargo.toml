@@ -11,6 +11,7 @@ documentation = "https://docs.rs/facebook-access-token-api"
 keywords = []
 categories = []
 readme = "README.md"
+rust-version = "1.58.0"
 
 [dependencies]
 facebook-access-token = { version = "0.1", path = "../facebook-access-token" }

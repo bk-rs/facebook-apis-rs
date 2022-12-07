@@ -11,6 +11,7 @@ documentation = "https://docs.rs/facebook-pages-api"
 keywords = []
 categories = []
 readme = "README.md"
+rust-version = "1.58.0"
 
 [dependencies]
 facebook-graph-api-object-error = { version = "0.2", path = "../facebook-graph-api-object-error" }

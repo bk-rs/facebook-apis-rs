@@ -11,6 +11,7 @@ documentation = "https://docs.rs/facebook-access-token"
 keywords = []
 categories = []
 readme = "README.md"
+rust-version = "1.58.0"
 
 [dependencies]
 wrapping-macro = { version = "0.2" }
