@@ -1,6 +1,6 @@
 [package]
 name = "facebook-access-token-api"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["vkill <vkill.net@gmail.com>"]
 edition = "2021"
 description = "Facebook - Access Token API"
@@ -14,7 +14,7 @@ readme = "README.md"
 
 [dependencies]
 facebook-access-token = { version = "0.1", path = "../facebook-access-token" }
-facebook-graph-api-object-error = { version = "0.1", path = "../facebook-graph-api-object-error" }
+facebook-graph-api-object-error = { version = "0.2", path = "../facebook-graph-api-object-error" }
 
 http-api-client-endpoint = { version = "0.2" }
 http-api-client = { version = "0.2" }
