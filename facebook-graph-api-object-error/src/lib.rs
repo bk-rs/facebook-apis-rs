@@ -39,7 +39,7 @@ impl Error {
         extra.insert("body".to_string(), Value::from(body));
 
         Self {
-            message: format!("status_code:{} body:{}", status_code, body),
+            message: format!("status_code:{status_code} body:{body}"),
             r#type: None,
             code: CODE_STATUS_CODE_AND_BODY,
             error_subcode: None,
@@ -103,7 +103,7 @@ pub enum ErrorType {
 
 impl core::fmt::Display for Error {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{:?}", self)
+        write!(f, "{self:?}")
     }
 }
 
@@ -146,7 +146,7 @@ impl KnownErrorCase {
 
 impl core::fmt::Display for KnownErrorCase {
     fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{:?}", self)
+        write!(f, "{self:?}")
     }
 }
 

@@ -26,10 +26,10 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
     let ret = client.respond_endpoint(&ep).await?;
     match ret {
         EndpointRet::Ok(ok_json) => {
-            println!("{:?}", ok_json);
+            println!("{ok_json:?}");
         }
         EndpointRet::Other((status_code, Ok(err_json))) => {
-            println!("{} {:?}", status_code, err_json);
+            println!("{status_code} {err_json:?}");
         }
         EndpointRet::Other((status_code, Err(body))) => {
             println!("{} {:?}", status_code, String::from_utf8_lossy(&body));

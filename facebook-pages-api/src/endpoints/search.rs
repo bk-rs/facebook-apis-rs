@@ -133,7 +133,7 @@ mod tests {
             include_str!("../../tests/response_body_json_files/pages__search__q_Chengdu.json");
         match serde_json::from_str::<SearchEndpointResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(!ok_json.data.is_empty());
             }
             Err(err) => panic!("{}", err),
@@ -144,7 +144,7 @@ mod tests {
             include_str!("../../tests/response_body_json_files/pages__search__q_Facebook.json");
         match serde_json::from_str::<SearchEndpointResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(!ok_json.data.is_empty());
             }
             Err(err) => panic!("{}", err),

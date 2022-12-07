@@ -27,20 +27,17 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
     //
     let app_access_token = gen_app_access_token(&client, app_id, &app_secret)
         .await?
-        .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+        .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
 
-    println!("app_access_token value:{}", app_access_token);
+    println!("app_access_token value:{app_access_token}");
 
     assert_eq!(app_access_token.app_id_and_app_secret().unwrap().0, app_id);
 
     //
     let app_access_token_debug_result = debug_app_access_token(&client, app_access_token)
         .await?
-        .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
-    println!(
-        "app_access_token debug_result:{:?}",
-        app_access_token_debug_result
-    );
+        .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
+    println!("app_access_token debug_result:{app_access_token_debug_result:?}");
 
     //
     let app_access_token_debug_result = debug_app_access_token(
@@ -48,11 +45,8 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
         AppAccessToken::with_app_secret(app_id, &app_secret),
     )
     .await?
-    .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
-    println!(
-        "app_access_token with_app_secret debug_result:{:?}",
-        app_access_token_debug_result
-    );
+    .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
+    println!("app_access_token with_app_secret debug_result:{app_access_token_debug_result:?}");
 
     Ok(())
 }

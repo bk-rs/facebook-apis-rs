@@ -34,10 +34,9 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
     let short_lived_user_access_token_debug_result =
         debug_user_access_token(&client, &short_lived_user_access_token)
             .await?
-            .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+            .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
     println!(
-        "short_lived_user_access_token debug_result:{:?}",
-        short_lived_user_access_token_debug_result
+        "short_lived_user_access_token debug_result:{short_lived_user_access_token_debug_result:?}"
     );
 
     //
@@ -49,21 +48,19 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
             &short_lived_user_access_token,
         )
         .await?
-        .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+        .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
 
     println!(
-        "long_lived_user_access_token value:{} expires_in:{:?}",
-        long_lived_user_access_token, long_lived_user_access_token_expires_in
+        "long_lived_user_access_token value:{long_lived_user_access_token} expires_in:{long_lived_user_access_token_expires_in:?}"
     );
 
     //
     let long_lived_user_access_token_debug_result =
         debug_user_access_token(&client, &long_lived_user_access_token)
             .await?
-            .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+            .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
     println!(
-        "long_lived_user_access_token debug_result:{:?}",
-        long_lived_user_access_token_debug_result
+        "long_lived_user_access_token debug_result:{long_lived_user_access_token_debug_result:?}"
     );
 
     //
@@ -74,21 +71,19 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
             AppAccessToken::with_app_secret(app_id, &app_secret),
         )
         .await?
-        .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+        .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
     println!(
-        "long_lived_user_access_token debug_result:{:?}",
-        long_lived_user_access_token_debug_result
+        "long_lived_user_access_token debug_result:{long_lived_user_access_token_debug_result:?}"
     );
 
     //
     let (user_session_info_access_token, user_session_info_access_token_expires_in) =
         gen_user_session_info_access_token(&client, app_id, long_lived_user_access_token.inner())
             .await?
-            .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+            .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
 
     println!(
-        "user_session_info_access_token value:{} expires_in:{:?}",
-        user_session_info_access_token, user_session_info_access_token_expires_in
+        "user_session_info_access_token value:{user_session_info_access_token} expires_in:{user_session_info_access_token_expires_in:?}"
     );
 
     //
@@ -101,7 +96,7 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
         let ret = client.respond_endpoint(&ep).await?;
         match ret {
             EndpointRet::Other((status_code, Ok(err_json))) => {
-                println!("{} {:?}", status_code, err_json);
+                println!("{status_code} {err_json:?}");
                 if status_code.as_u16() != 400
                     || !err_json.error.message.to_lowercase().contains(
                         "Invalid OAuth access token - Debug only access token"
@@ -110,12 +105,11 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
                     )
                 {
                     eprintln!(
-                        "debug_token user_session_info_access_token {} {:?}",
-                        status_code, err_json
+                        "debug_token user_session_info_access_token {status_code} {err_json:?}",
                     );
                 }
             }
-            ret => panic!("{:?}", ret),
+            ret => panic!("{ret:?}"),
         }
     }
 
@@ -127,10 +121,9 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
             long_lived_user_access_token.inner(),
         )
         .await?
-        .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+        .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
     println!(
-        "user_session_info_access_token debug_result:{:?}",
-        user_session_info_access_token_debug_result
+        "user_session_info_access_token debug_result:{user_session_info_access_token_debug_result:?}"
     );
 
     //
@@ -141,10 +134,9 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
             AppAccessToken::with_app_secret(app_id, &app_secret),
         )
         .await?
-        .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+        .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
     println!(
-        "user_session_info_access_token debug_result:{:?}",
-        user_session_info_access_token_debug_result
+        "user_session_info_access_token debug_result:{user_session_info_access_token_debug_result:?}"
     );
 
     Ok(())

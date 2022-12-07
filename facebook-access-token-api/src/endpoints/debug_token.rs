@@ -116,15 +116,15 @@ mod tests {
             include_str!("../../tests/response_body_json_files/debug_token__app_access_token.json");
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(ok_json.data.error.is_none(),);
                 match ok_json.data.type_extra.unwrap() {
                     DebugTokenResultTypeExtra::App(info) => {
                         assert_eq!(info.app_id, 257422819769992);
                         assert_eq!(info.application, "oauth2-rs-f-b-web-app-demo");
                     }
-                    DebugTokenResultTypeExtra::User(x) => panic!("{:?}", x),
-                    DebugTokenResultTypeExtra::Page(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::User(x) => panic!("{x:?}"),
+                    DebugTokenResultTypeExtra::Page(x) => panic!("{x:?}"),
                 }
             }
             Err(err) => panic!("{}", err),
@@ -139,16 +139,16 @@ mod tests {
         );
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(ok_json.data.error.is_none(),);
                 match ok_json.data.type_extra.unwrap() {
-                    DebugTokenResultTypeExtra::App(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::App(x) => panic!("{x:?}"),
                     DebugTokenResultTypeExtra::User(info) => {
                         assert_eq!(info.app_id, 257422819769992);
                         assert_eq!(info.user_id, 123);
                         assert!(info.metadata.is_some());
                     }
-                    DebugTokenResultTypeExtra::Page(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::Page(x) => panic!("{x:?}"),
                 }
             }
             Err(err) => panic!("{}", err),
@@ -160,16 +160,16 @@ mod tests {
         );
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(ok_json.data.error.is_none(),);
                 match ok_json.data.type_extra.unwrap() {
-                    DebugTokenResultTypeExtra::App(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::App(x) => panic!("{x:?}"),
                     DebugTokenResultTypeExtra::User(info) => {
                         assert_eq!(info.app_id, 257422819769992);
                         assert_eq!(info.user_id, 123);
                         assert!(info.metadata.is_none());
                     }
-                    DebugTokenResultTypeExtra::Page(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::Page(x) => panic!("{x:?}"),
                 }
             }
             Err(err) => panic!("{}", err),
@@ -181,15 +181,15 @@ mod tests {
         );
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(ok_json.data.error.unwrap().message.contains("has expired"));
                 match ok_json.data.type_extra.unwrap() {
-                    DebugTokenResultTypeExtra::App(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::App(x) => panic!("{x:?}"),
                     DebugTokenResultTypeExtra::User(info) => {
                         assert_eq!(info.app_id, 257422819769992);
                         assert_eq!(info.user_id, 123);
                     }
-                    DebugTokenResultTypeExtra::Page(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::Page(x) => panic!("{x:?}"),
                 }
             }
             Err(err) => panic!("{}", err),
@@ -201,7 +201,7 @@ mod tests {
         );
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(ok_json
                     .data
                     .error
@@ -209,13 +209,13 @@ mod tests {
                     .message
                     .contains("has been invalidated"));
                 match ok_json.data.type_extra.unwrap() {
-                    DebugTokenResultTypeExtra::App(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::App(x) => panic!("{x:?}"),
                     DebugTokenResultTypeExtra::User(info) => {
                         assert_eq!(info.app_id, 257422819769992);
                         assert_eq!(info.user_id, 123);
                         assert!(info.granular_scopes.is_some());
                     }
-                    DebugTokenResultTypeExtra::Page(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::Page(x) => panic!("{x:?}"),
                 }
             }
             Err(err) => panic!("{}", err),
@@ -230,7 +230,7 @@ mod tests {
         );
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(_ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
             }
             Err(err) => panic!("{}", err),
         }
@@ -241,7 +241,7 @@ mod tests {
         );
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(_ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
             }
             Err(err) => panic!("{}", err),
         }
@@ -251,7 +251,7 @@ mod tests {
             include_str!("../../tests/response_body_json_files/debug_token__200__example_1.json");
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(_ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
             }
             Err(err) => panic!("{}", err),
         }
@@ -261,7 +261,7 @@ mod tests {
             include_str!("../../tests/response_body_json_files/debug_token__200__example_2.json");
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(ok_json.data.is_valid);
             }
             Err(err) => panic!("{}", err),
@@ -276,11 +276,11 @@ mod tests {
         );
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(ok_json.data.error.is_none(),);
                 match ok_json.data.type_extra.unwrap() {
-                    DebugTokenResultTypeExtra::App(x) => panic!("{:?}", x),
-                    DebugTokenResultTypeExtra::User(x) => panic!("{:?}", x),
+                    DebugTokenResultTypeExtra::App(x) => panic!("{x:?}"),
+                    DebugTokenResultTypeExtra::User(x) => panic!("{x:?}"),
                     DebugTokenResultTypeExtra::Page(info) => {
                         assert_eq!(info.app_id, 257422819769992);
                         assert_eq!(info.user_id, 123);
@@ -314,7 +314,7 @@ mod tests {
         );
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(ok_json.data.error.is_some(),);
             }
             Err(err) => panic!("{}", err),
@@ -326,7 +326,7 @@ mod tests {
         );
         match serde_json::from_str::<DebugTokenResponseBodyOkJson>(content) {
             Ok(ok_json) => {
-                // println!("{:?}", ok_json);
+                // println!("{ok_json:?}");
                 assert!(ok_json.data.error.is_some(),);
             }
             Err(err) => panic!("{}", err),

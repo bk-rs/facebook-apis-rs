@@ -32,21 +32,17 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
     //
     let page_access_token_debug_result = debug_page_access_token(&client, &page_access_token)
         .await?
-        .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
-    println!(
-        "page_access_token debug_result:{:?}",
-        page_access_token_debug_result
-    );
+        .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
+    println!("page_access_token debug_result:{page_access_token_debug_result:?}");
 
     //
     let (page_session_info_access_token, page_session_info_access_token_expires_in) =
         gen_page_session_info_access_token(&client, app_id, &page_access_token)
             .await?
-            .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+            .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
 
     println!(
-        "page_session_info_access_token value:{} expires_in:{:?}",
-        page_session_info_access_token, page_session_info_access_token_expires_in
+        "page_session_info_access_token value:{page_session_info_access_token} expires_in:{page_session_info_access_token_expires_in:?}"
     );
 
     //
@@ -59,7 +55,7 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
         let ret = client.respond_endpoint(&ep).await?;
         match ret {
             EndpointRet::Other((status_code, Ok(err_json))) => {
-                println!("{} {:?}", status_code, err_json);
+                println!("{status_code} {err_json:?}");
                 if status_code.as_u16() != 400
                     || !err_json.error.message.to_lowercase().contains(
                         "Invalid OAuth access token - Debug only access token"
@@ -68,12 +64,11 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
                     )
                 {
                     eprintln!(
-                        "debug_token page_session_info_access_token {} {:?}",
-                        status_code, err_json
+                        "debug_token page_session_info_access_token {status_code} {err_json:?}"
                     );
                 }
             }
-            ret => panic!("{:?}", ret),
+            ret => panic!("{ret:?}"),
         }
     }
 
@@ -85,10 +80,9 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
             &page_access_token,
         )
         .await?
-        .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+        .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
     println!(
-        "page_session_info_access_token debug_result:{:?}",
-        page_session_info_access_token_debug_result
+        "page_session_info_access_token debug_result:{page_session_info_access_token_debug_result:?}"
     );
 
     //
@@ -99,10 +93,9 @@ async fn run() -> Result<(), Box<dyn error::Error>> {
             AppAccessToken::with_app_secret(app_id, &app_secret),
         )
         .await?
-        .map_err(|(status_code, err_json)| format!("{} {:?}", status_code, err_json))?;
+        .map_err(|(status_code, err_json)| format!("{status_code} {err_json:?}"))?;
     println!(
-        "page_session_info_access_token debug_result:{:?}",
-        page_session_info_access_token_debug_result
+        "page_session_info_access_token debug_result:{page_session_info_access_token_debug_result:?}"
     );
 
     Ok(())
