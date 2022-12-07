@@ -10,64 +10,19 @@ pub const LONG_LIVED_USER_ACCESS_TOKEN_LIFETIME: Duration = Duration::from_secs(
 pub const SHORT_LIVED_USER_ACCESS_TOKEN_LIFETIME_MIN: Duration = Duration::from_secs(3600);
 pub const SHORT_LIVED_USER_ACCESS_TOKEN_LIFETIME_MAX: Duration = Duration::from_secs(3600 * 2);
 
-wrapping_macro::wrapping! {
+wrapping_macro::wrapping_string! {
     #[derive(Debug, Clone, PartialEq, Eq)]
     pub struct LongLivedUserAccessToken(String);
 }
-impl core::fmt::Display for LongLivedUserAccessToken {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-impl From<&str> for LongLivedUserAccessToken {
-    fn from(s: &str) -> Self {
-        Self(s.into())
-    }
-}
-impl From<&String> for LongLivedUserAccessToken {
-    fn from(s: &String) -> Self {
-        Self(s.into())
-    }
-}
 
-wrapping_macro::wrapping! {
+wrapping_macro::wrapping_string! {
     #[derive(Debug, Clone, PartialEq, Eq)]
     pub struct ShortLivedUserAccessToken(String);
 }
-impl core::fmt::Display for ShortLivedUserAccessToken {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-impl From<&str> for ShortLivedUserAccessToken {
-    fn from(s: &str) -> Self {
-        Self(s.into())
-    }
-}
-impl From<&String> for ShortLivedUserAccessToken {
-    fn from(s: &String) -> Self {
-        Self(s.into())
-    }
-}
 
-wrapping_macro::wrapping! {
+wrapping_macro::wrapping_string! {
     #[derive(Debug, Clone, PartialEq, Eq)]
     pub struct UserAccessToken(String);
-}
-impl core::fmt::Display for UserAccessToken {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-impl From<&str> for UserAccessToken {
-    fn from(s: &str) -> Self {
-        Self(s.into())
-    }
-}
-impl From<&String> for UserAccessToken {
-    fn from(s: &String) -> Self {
-        Self(s.into())
-    }
 }
 
 impl From<LongLivedUserAccessToken> for UserAccessToken {
@@ -97,24 +52,9 @@ impl From<&ShortLivedUserAccessToken> for UserAccessToken {
 //
 //
 //
-wrapping_macro::wrapping! {
+wrapping_macro::wrapping_string! {
     #[derive(Debug, Clone, PartialEq, Eq)]
     pub struct AppAccessToken(String);
-}
-impl core::fmt::Display for AppAccessToken {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-impl From<&str> for AppAccessToken {
-    fn from(s: &str) -> Self {
-        Self(s.into())
-    }
-}
-impl From<&String> for AppAccessToken {
-    fn from(s: &String) -> Self {
-        Self(s.into())
-    }
 }
 
 impl AppAccessToken {
@@ -146,47 +86,17 @@ impl AppAccessToken {
 Get from https://graph.facebook.com/v15.0/me?fields=id%2Cname%2Caccounts%7Bid%2Cname%2Caccess_token%7D&access_token=YOUR_SHORT_LIVED_OR_LONG_LIVED_USER_ACCESS_TOKEN
 PageAccessToken expires == UserAccessToken expires
 */
-wrapping_macro::wrapping! {
+wrapping_macro::wrapping_string! {
     #[derive(Debug, Clone, PartialEq, Eq)]
     pub struct PageAccessToken(String);
-}
-impl core::fmt::Display for PageAccessToken {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-impl From<&str> for PageAccessToken {
-    fn from(s: &str) -> Self {
-        Self(s.into())
-    }
-}
-impl From<&String> for PageAccessToken {
-    fn from(s: &String) -> Self {
-        Self(s.into())
-    }
 }
 
 //
 //
 //
-wrapping_macro::wrapping! {
+wrapping_macro::wrapping_string! {
     #[derive(Debug, Clone, PartialEq, Eq)]
     pub struct ClientAccessToken(String);
-}
-impl core::fmt::Display for ClientAccessToken {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-impl From<&str> for ClientAccessToken {
-    fn from(s: &str) -> Self {
-        Self(s.into())
-    }
-}
-impl From<&String> for ClientAccessToken {
-    fn from(s: &String) -> Self {
-        Self(s.into())
-    }
 }
 
 impl ClientAccessToken {
@@ -204,45 +114,15 @@ does not grant access to user data
 calling the debug_token endpoint to verify that it is valid
 */
 //
-wrapping_macro::wrapping! {
+wrapping_macro::wrapping_string! {
     #[derive(Debug, Clone, PartialEq, Eq)]
     pub struct UserSessionInfoAccessToken(String);
 }
-impl core::fmt::Display for UserSessionInfoAccessToken {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-impl From<&str> for UserSessionInfoAccessToken {
-    fn from(s: &str) -> Self {
-        Self(s.into())
-    }
-}
-impl From<&String> for UserSessionInfoAccessToken {
-    fn from(s: &String) -> Self {
-        Self(s.into())
-    }
-}
 
 //
-wrapping_macro::wrapping! {
+wrapping_macro::wrapping_string! {
     #[derive(Debug, Clone, PartialEq, Eq)]
     pub struct PageSessionInfoAccessToken(String);
-}
-impl core::fmt::Display for PageSessionInfoAccessToken {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        write!(f, "{}", self.0)
-    }
-}
-impl From<&str> for PageSessionInfoAccessToken {
-    fn from(s: &str) -> Self {
-        Self(s.into())
-    }
-}
-impl From<&String> for PageSessionInfoAccessToken {
-    fn from(s: &String) -> Self {
-        Self(s.into())
-    }
 }
 
 //

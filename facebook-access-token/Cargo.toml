@@ -13,4 +13,4 @@ categories = []
 readme = "README.md"
 
 [dependencies]
-wrapping-macro = { version = "0.1" }
+wrapping-macro = { version = "0.2" }
